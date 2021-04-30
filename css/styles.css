@@ -85,8 +85,7 @@ a{
 .proyectos__bloques{
     margin: 4rem auto;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: 28rem;
     padding-top: 1rem;
     padding-bottom: 3rem;
     box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.34);
@@ -100,7 +99,7 @@ a{
     margin-top: 2rem;
 }
 .proyectos__bloques p{
-    margin: 0 2rem;
+    margin: 1rem 2rem auto 2rem;
 }
 .tecnologias{
     display: flex;
@@ -109,10 +108,25 @@ a{
     height: 5rem;
     margin: 10%;
 }
+.imagen{
+    text-align: center;
+}
 img{
     width: 20rem;
     height: 20rem;
     background-color:transparent;
+}
+.udemy img, .platzi img{
+    width: 15rem;
+    height: 15rem;
+}
+ul{
+    text-decoration: none;
+
+}
+li p{
+    margin: 0;
+    text-align: left;
 }
 .parrafo{
     text-align: center;
@@ -155,11 +169,23 @@ img{
     .proyectos__varios{
         display: flex;
         gap: 10rem;
+        justify-content: space-evenly;
     }
     .proyectos__bloques{
-        height: 38rem;
+        width:30rem;
     }
     .educacion-animacion{
+        width: 50%;
+    }
+    .cursos{
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+    .udemy{
+        width: 50%;
+    }
+    .platzi{
         width: 50%;
     }
 }
@@ -189,6 +215,9 @@ img{
     .contacto__texto{
         width: 50%;
     }
+    .cursos{
+        gap: 5rem;
+    }
 }
 @media (min-width: 1440px) {
     .contenedor{
@@ -211,8 +240,12 @@ img{
     .proyectos__varios{
         gap: 10rem;
     }
-    .proyectos__bloques p{
-        margin: 0 6rem;
-        text-align: justify;
+    .cursos{
+        gap: 10rem;
+    }
+    
+    .proyectos__bloques{
+        width:40rem;
+        height: 40rem;
     }
 }
