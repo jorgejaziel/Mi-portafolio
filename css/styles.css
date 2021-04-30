@@ -19,16 +19,6 @@ html {
     font-family: Agustina-Signature;
     src: url(../css/Agustina-Signature.otf);
 }
-main{
-    background: rgba(250,250,250,1);
-background: -moz-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 29%, rgba(230,230,230,1) 51%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,250,250,1)), color-stop(29%, rgba(242,242,242,1)), color-stop(51%, rgba(230,230,230,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 29%, rgba(230,230,230,1) 51%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 29%, rgba(230,230,230,1) 51%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 29%, rgba(230,230,230,1) 51%, rgba(255,255,255,1) 100%);
-background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 29%, rgba(230,230,230,1) 51%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ffffff', GradientType=0 );
-}
 body{
     margin: 0;
 }
@@ -58,7 +48,7 @@ span{
 a{
     text-decoration: none;
 }
-.presentacion , .experiencia, .educacion{
+.presentacion , .experiencia, .educacion, .proyectos{
     padding-bottom: 3rem;
     max-width: 100rem;
     width: 90%;
@@ -91,6 +81,26 @@ a{
     max-width: 100rem;
     width: 90%;
     margin: 0 auto;
+}
+.proyectos__bloques{
+    margin: 4rem auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.34);
+    border-radius: 76px 76px 76px 76px;
+    -webkit-border-radius: 76px 76px 76px 76px;
+    -moz-border-radius: 76px 76px 76px 76px;
+}
+.proyectos__bloques img{
+    margin-top: 2rem;
+}
+.proyectos__bloques p{
+    margin: 0 2rem;
 }
 .tecnologias{
     display: flex;
@@ -138,31 +148,35 @@ img{
     .experiencia{
         margin-right: 3rem;
     }
-    .presentacion__animacion,
-    .experiencia__animacion,
-    .animacion-educacion
-    {
-        width: 50%;
-    }
     .correo{
         font-size: 4rem;
         margin: 7rem 0; 
+    }
+    .proyectos__varios{
+        display: flex;
+        gap: 10rem;
+    }
+    .proyectos__bloques{
+        height: 38rem;
+    }
+    .educacion-animacion{
+        width: 50%;
     }
 }
 @media (min-width: 1024px) {
     .todos{
         display: inline;
     }
-    .presentacion{
+    .presentacion, .experiencia, .contacto{
         display: flex;
         gap: 2rem;
+        margin: 0 auto ;
     }
     .presentacion__texto{
         width: 50%;
     }
-    .experiencia{
-        display: flex;
-        gap: 2rem;
+    .presentacion__animacion{
+        width: 50%;
     }
     .experiencia__texto{
         width: 50%;
@@ -171,6 +185,9 @@ img{
     .experiencia__animacion{
         width: 50%;
         flex-flow: wrap-reverse;
+    }
+    .contacto__texto{
+        width: 50%;
     }
 }
 @media (min-width: 1440px) {
@@ -181,9 +198,8 @@ img{
     }
     .educacion{
         margin: 0;
-
     }
-    .presentacion , .experiencia, .educacion{
+    .presentacion , .experiencia, .educacion, .contacto, .proyectos{
         max-width: 1000rem;
         width: 90%;
         margin: 0 auto;
@@ -191,5 +207,12 @@ img{
     }
     .contactos{
         margin-top: 10rem;
+    }
+    .proyectos__varios{
+        gap: 10rem;
+    }
+    .proyectos__bloques p{
+        margin: 0 6rem;
+        text-align: justify;
     }
 }
