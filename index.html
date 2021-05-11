@@ -15,8 +15,8 @@
             <a href="index.html">
                 <h1 class="logo__nombre"><span class="logo__caracter">&lt;</span> Jorge Carreon <span class="logo__caracter">/&gt;</span></h1>
             </a>
-            <button class="dropbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <button class="burger_button" id="burger_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <line x1="4" y1="6" x2="20" y2="6"></line>
                     <line x1="4" y1="12" x2="20" y2="12"></line>
@@ -25,12 +25,12 @@
             </button>
         </div>
         <div class="todos">
-            <div class="presentacion">
+            <div class="presentacion" id="presentacion">
                 <div class="contenedor presentacion__texto">
                     <h2 class="texto">Hola a todos</h2>
                     <p>Me llamo Jorge Carreón, soy un apasionado por las tecnologías de Desarrollo web, tengo experiencia con Html5, Css3, Javascript, entre otras, me gusta aprender sobre el diseño front end y también estoy en búsqueda de tecnologías backend, para en futuro convertirme en desarrollador Full Stack</p>
                     <div class="redes-sociales">
-                        <nav class="contactos">
+                        <nav class="contactos" id="experiencia">
                             <a href="https://www.github.com/jorgejaziel">
                                 <i class="fab fa-github fa-5x"></i>
                             </a>
@@ -54,7 +54,7 @@
                     <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_iCs1OM.json" mode="bounce" background="transparent"  speed="1.5"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>
                 </div>
             </div>
-            <div class="experiencia">
+            <div class="experiencia" >
                 <div class="contenedor experiencia__texto">
                     <h2 class="texto">Experiencia</h2>
                     <p class="parrafo">Tecnologías que manejo</p>
@@ -67,10 +67,10 @@
                 </div>
                 <div class="contenedor experiencia__animacion">
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_CrmLbt.json"  background="transparent"  speed="1.5"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player></div>
+                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_CrmLbt.json"  background="transparent"  speed="1.5"  style="width: 100%; height: 100%;"  loop  autoplay position="absolute"></lottie-player></div>
             </div>
         </div>
-        <div class="proyectos">
+        <div class="proyectos" id="proyectos">
             <h2 class="texto">Proyectos</h2>
             <div class="proyectos__varios">
                 <a href="https://barberiajc.netlify.app">
@@ -79,15 +79,15 @@
                         <p>Esta app fue desarrollada con el framework de Ionic como proyecto escolar, la intención fue crear una app móvil</p>
                     </div>
                 </a>
-                <a href="https://barberiajc.netlify.app">
+                <a href="https://jorgecarreongoogleclon.netlify.app/">
                     <div class="proyectos__bloques">
-                        <img src="/img/barber.png" alt="logo del proyecto">
-                        <p>Esta app  con el framework de Ionic como proyecto escolar, la intención fue crear una app móvil</p>
+                        <img src="/img/icono.png" alt="logo del proyecto">
+                        <p>Esta es un clon de la pagina principal de Google que cree con HTML, CSS y un poco de Javascript</p>
                     </div>
                 </a>
             </div>
         </div>
-        <div class="educacion">
+        <div class="educacion" id="estudios">
             <div class="educacion-texto">
                 <h2 class="texto">Educación</h2>
                     <div class="imagen">
@@ -147,7 +147,7 @@
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_e6MQKr.json"  background="transparent"  speed="1.5"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player></div>
             </div>
-        <div class="contenedor contacto">
+        <div class="contenedor contacto" id="contacto">
             <div class="contacto__texto">
                 <h2 class="texto">Contáctame</h2>
                 <a href="mailto:jorgejaziel1234@gmail.com">
@@ -178,5 +178,40 @@
         </div>      
         <div style="height: 200px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 0, 0);"></path></svg></div>  
     </main>
+    <div class="overlay" id="overlay"></div>
+    <aside class="mobile_sidebar" id="sidebar">
+        <ul class="sidebar_menu">
+          <li class="sidebar_menu-item">
+            <a href="#presentacion" class="sidebar-link">  
+              <span class="sidebar-text">Presentacion</span>
+            </a>
+          </li>
+          <li class="sidebar_menu-item">
+            <a href="#experiencia" class="sidebar-link">
+              
+              <span class="sidebar-text">Experiencia</span>
+            </a>
+          </li>
+          <li class="sidebar_menu-item">
+            <a href="#proyectos" class="sidebar-link">
+              
+              <span class="sidebar-text">Proyectos</span>
+            </a>
+          </li>
+          <li class="sidebar_menu-item">
+            <a href="#estudios" class="sidebar-link">
+              
+              <span class="sidebar-text">Estudios</span>
+            </a>
+          </li>
+          <li class="sidebar_menu-item">
+            <a href="#contacto" class="sidebar-link">
+             
+              <span class="sidebar-text">contacto</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <script src="js/script.js"></script>
 </body>
 </html>

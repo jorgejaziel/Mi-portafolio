@@ -25,7 +25,8 @@ body{
 h1{
     font-size: 2rem;
     font-family: Agustina-Signature;
-    color: var(--oscuro);
+    color:#FFFFFF;
+    font-weight: lighter;
 }
 h2{
     font-size: 3rem;
@@ -42,7 +43,8 @@ p{
 }
 span{
     font-size: 2rem;
-    color: var(--oscuro);
+    color: white;
+    font-weight: lighter;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a{
@@ -55,6 +57,9 @@ a{
     margin: 0 auto;
     border-bottom: .2rem solid black;
 }
+.presentacion{
+    padding-top: 8rem;
+}
 .fab{
     color: black;
     background-color: transparent;
@@ -64,9 +69,17 @@ a{
     justify-content: space-between;
     margin: 0 auto;
     max-width: 100%;
+    width: 100%;
     padding: 2.5rem;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    height: 8rem;
+    align-items: center;
 }
-.dropbtn{
+.burger_button{
     border: none;
     background-color: transparent;
 }
@@ -94,6 +107,10 @@ a{
     border-radius: 76px 76px 76px 76px;
     -webkit-border-radius: 76px 76px 76px 76px;
     -moz-border-radius: 76px 76px 76px 76px;
+}
+.proyectos__bloques:hover{
+    width: 40rem;
+    height: 45rem;
 }
 .proyectos__bloques img{
     margin-top: 2rem;
@@ -143,6 +160,55 @@ li p{
 .texto{
     margin-top: 5rem;
 }
+div ul li{
+    margin-bottom: 3rem;
+}
+div ul li p:hover{
+    text-decoration: underline rgb(0, 0, 0);
+    font-size: 3rem;
+}
+.overlay {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .overlay_open { /* JS */
+    left: 0;
+  }
+  .mobile_sidebar {
+    background: white;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    bottom: 0;
+    z-index: 2;
+    width: 250px;
+    overflow: auto;
+    transition: right .5s;
+  }
+  
+  .sidebar_open { /* JS */
+    right: 0;
+  }
+  .sidebar_menu{
+      list-style: none;
+      padding-left: 3rem;
+  }
+  .sidebar_menu-item{
+      margin-bottom: 3rem;
+  }
+  .sidebar-text{
+    color: var(--oscuro);
+    
+}
+
+
 @media (min-width: 768px) {
     h1{
         font-size: 4rem;
@@ -153,13 +219,18 @@ li p{
     p{
         font-size: 2.5rem;
     }
+    .header{
+        height: 12rem;
+    }
     .todos{
         display: flex;
     }
     .presentacion{
         margin-left: 3rem;
+        padding-top: 12rem;
     }
     .experiencia{
+        padding-top: 12rem;
         margin-right: 3rem;
     }
     .correo{
@@ -233,6 +304,10 @@ li p{
         width: 90%;
         margin: 0 auto;
         align-items: center;
+        padding: 10rem 0;
+    }
+    .presentacion{
+        padding-top: 24rem;
     }
     .contactos{
         margin-top: 10rem;
@@ -247,5 +322,8 @@ li p{
     .proyectos__bloques{
         width:40rem;
         height: 40rem;
+    }
+    .header{
+        height: 12rem;
     }
 }
