@@ -60,9 +60,12 @@ a{
 .presentacion{
     padding-top: 8rem;
 }
-.fab{
+.fab, .fas{
     color: black;
     background-color: transparent;
+}
+.fa-bars{
+    color: white;
 }
 .header{
     display: flex;
