@@ -4,29 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="jorgejaziel,Freelancer,freelancer,Jorge Carreon,HTML, CSS, JavaScript">
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/5b25009348.js" crossorigin="anonymous"></script>
-    <title>Freelancer Jorge Jaziel</title>
+    <title>Desarrollo Web - Jorge Jaziel</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <main>
-        <div class="header">  
-            <a href="index.html">
-                <h1 class="logo__nombre"><span class="logo__caracter">&lt;</span> Jorge Jaziel <span class="logo__caracter">/&gt;</span></h1>
-            </a>
-            <button class="burger_button" id="burger_btn">
-                <i class="fas fa-bars fa-3x"></i>
-            </button>
+
+    <header id="header">
+        <div class="container__header">
+            <div class="logo">
+            </div>
+            <div class="container__nav">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#" class="select">HOME</a></li>
+                        <li><a href="#presentacion">SOBRE MI</a></li>
+                        <li><a href="#proyectos">PROYECTOS</a></li>
+                        <li><a href="#contacto">CONTACTAME</a></li>
+                    </ul>
+                </nav>
+                <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+            </div>
         </div>
-        <div class="todos">
+    </header>
+
+    <div class="container_all" id="container__all">
+        <div class="cover">
+            <div class="container__cover">
+                <div class="container__info">
+                    <h1>Desarrollador Web</h1>
+                    <h2>Front-End</h2>
+                    <p>Hola a todos me Jorge Jaziel y soy un desarrollador web, con un mayor gusto por el Front-End</p>
+                    <a href="/CV Jorge Jaziel Carreon Guajardo.pdf" download="CV_JORGECARREON"><input type="button" value="Curriculum" ></a>
+                </div>
+                <div class="container__vector">
+                    <img src="images/undraw_Code_thinking_re_gka2.svg" alt="">
+                </div>
+            </div>
+        </div>
+    <script src="js/script.js"></script>
+    
+        
             <div class="presentacion" id="presentacion">
                 <div class="contenedor presentacion__texto">
                     <h2 class="texto">Hola a todos</h2>
                     <p>Me llamo Jorge Carreón, soy un apasionado por las tecnologías de Desarrollo web, tengo experiencia con Html5, Css3, Javascript, entre otras, me gusta aprender sobre el diseño front end y también estoy en búsqueda de tecnologías backend, para en futuro convertirme en desarrollador Full Stack</p>
                     <div class="redes-sociales">
-                        <nav class="contactos" id="experiencia">
+                        <div class="contactos" id="experiencia">
                             <a href="https://www.github.com/jorgejaziel">
                                 <i class="fab fa-github fa-5x"></i>
                             </a>
@@ -42,12 +68,8 @@
                             <a href="https://www.instagram.com/jorgejaziel_/">
                                 <i class="fab fa-instagram fa-5x"></i>
                             </a>
-                        </nav>
+                        </div>
                     </div>
-                </div>
-                <div class="contenedor presentacion__animacion">
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_iCs1OM.json" mode="bounce" background="transparent"  speed="1.5"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>
                 </div>
             </div>
             <div class="experiencia" >
@@ -61,25 +83,22 @@
                     </ul>
                     <p>He tenido proyectos en el framework de Ionic y algunos más en Html5 y Css3, este portafolio es uno de mis proyectos personales para aprender mejor html y css sin ningún framework.<br>Espero pronto aprender un poco de ciencia de datos como meta personal </p>
                 </div>
-                <div class="contenedor experiencia__animacion">
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_CrmLbt.json"  background="transparent"  speed="1.5"  style="width: 100%; height: 100%;"  loop  autoplay position="absolute"></lottie-player></div>
             </div>
-        </div>
         <div class="proyectos" id="proyectos">
             <h2 class="texto">Proyectos</h2>
             <div class="proyectos__varios">
                 <a href="https://barberiajc.netlify.app">
                     <div class="proyectos__bloques">
-                        <img src="/img/barber.png" alt="logo del proyecto">
+                        <img src="/img/barber.png" alt="imagen barberia">
                         <p>Esta app fue desarrollada con el framework de Ionic como proyecto escolar, la intención fue crear una app móvil</p>
                     </div>
                 </a>
                 <a href="https://jorgecarreongoogleclon.netlify.app/">
                     <div class="proyectos__bloques">
-                        <img src="/img/icono.png" alt="logo del proyecto">
+                        <img src="/img/icono.png" alt="imagen de google">
                         <p>Esta es un clon de la pagina principal de Google que cree con HTML, CSS y un poco de Javascript</p>
                     </div>
+                    
                 </a>
             </div>
         </div>
@@ -139,10 +158,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="contenedor educacion-animacion">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_e6MQKr.json"  background="transparent"  speed="1.5"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player></div>
-            </div>
+        </div>
+            
         <div class="contenedor contacto" id="contacto">
             <div class="contacto__texto">
                 <h2 class="texto">Contáctame</h2>
@@ -167,48 +184,6 @@
                     </a>
                 </div>
             </div>
-            <div class="contenedor animacion-educacion">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hl349l.json"  background="transparent"  speed="1.5"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player></div>
-            </div>
-        </div>      
-        <div style="height: 200px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 0, 0);"></path></svg></div>  
-    </main>
-    <div class="overlay" id="overlay"></div>
-    <aside class="mobile_sidebar" id="sidebar">
-        <ul class="sidebar_menu">
-          <li class="sidebar_menu-item">
-            <a href="#presentacion" class="sidebar-link">  
-                <i class="fas fa-address-card"></i>
-                <span class="sidebar-text">Presentacion</span>
-            </a>
-          </li>
-          <li class="sidebar_menu-item">
-            <a href="#experiencia" class="sidebar-link">
-              
-              <span class="sidebar-text">Experiencia</span>
-            </a>
-          </li>
-          <li class="sidebar_menu-item">
-            <a href="#proyectos" class="sidebar-link">
-              
-              <span class="sidebar-text">Proyectos</span>
-            </a>
-          </li>
-          <li class="sidebar_menu-item">
-            <a href="#estudios" class="sidebar-link">
-              
-              <span class="sidebar-text">Estudios</span>
-            </a>
-          </li>
-          <li class="sidebar_menu-item">
-            <a href="#contacto" class="sidebar-link">
-             
-              <span class="sidebar-text">contacto</span>
-            </a>
-          </li>
-        </ul>
-      </aside>
-      <script src="js/script.js"></script>
+        </div> 
 </body>
 </html>

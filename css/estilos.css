@@ -13,7 +13,10 @@
     right: 0;
     transition: all 300ms;
 }
+html{
 
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+}
 
 header{
     width: 100%;
@@ -36,7 +39,8 @@ header{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px 20px;
 }
 
@@ -72,7 +76,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #4a3e3e;
     font-size: 14px;
 }
 
@@ -91,7 +95,7 @@ nav ul li a{
 }
 
 .select{
-    background: #359EF9;
+    background: rgb(102, 0, 255);
     padding: 10px 30px;
     color: white;
     border-radius: 20px;
@@ -118,7 +122,7 @@ nav ul li a{
 
 .cover{
     width: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 400px;
     font-family: 'Poppins', sans-serif;
     padding-top: 100px;
     position: relative;
@@ -129,28 +133,30 @@ nav ul li a{
 
 .bg_color{
     width: 100%;
-    height: 70%;
-    background: #2196f3;
+    height: 100%;
+    background-image: url(../images/HillsandMountains-day.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     top: 0;
 }
 
 .wave{
-    width: 6000px;
-    height: 100%;
-    position: absolute;
-    top: 150px;
-    left: 0;
+    width: 100%;
+    height: 180px;
+    top: 740px;
+    position: relative;
+    background-attachment: fixed;
     background-image: url(../images/wd1.svg);
     background-position: bottom;
 }
 
 .w1{
-    animation: w1 10s linear infinite;
+    animation: w1 7s linear infinite, desplazamiento 7s ease -.125s infinite;
 }
 
 .w2{
-    animation: w2 10s linear -.125s infinite, desplazamiento 10s ease -.125s infinite;
+    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
     opacity: 0.5;
 }
 
@@ -207,19 +213,20 @@ nav ul li a{
     max-width: 400px;
     font-size: 60px;
     font-weight: 900;
-    color: #fff;
+    color: #4a3e3e;
 }
 
 .cover h2{
     font-size: 60px;
     font-weight: 900;
-    color: #FEBA0B;
+    color: rgb(102, 0, 255);
     margin-top: -30px;
 }
 
 .cover p{
     margin-top: 10px;
-    color: #fff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .cover input[type="button"]{
@@ -229,7 +236,7 @@ nav ul li a{
     font-weight: 600;
     border: none;
     color: white;
-    background: #FEBA0B;
+    background: rgb(102, 0, 255);
     border-radius: 20px;
     box-shadow: 1px 1px 30px -5px #20202049;
     cursor: pointer;
@@ -315,35 +322,6 @@ nav ul li a{
 
 
 
-/*
-h1{
-    font-size: 2rem;
-    font-family: Agustina-Signature;
-    color:#FFFFFF;
-    font-weight: lighter;
-}
-h2{
-    font-size: 3rem;
-    font-family:'Times New Roman', Times, serif;
-    color: var(--oscuro);
-    text-align: center;
-    margin-top: 0;
-}
-p{
-    font-size: 2rem;
-    font-family:'Times New Roman', Times, serif;
-    color: var(--gris);
-    text-align:center;
-}
-span{
-    font-size: 2rem;
-    color: white;
-    font-weight: lighter;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-a{
-    text-decoration: none;
-}
 .presentacion , .experiencia, .educacion, .proyectos{
     padding-bottom: 3rem;
     max-width: 100rem;
@@ -351,68 +329,44 @@ a{
     margin: 0 auto;
     border-bottom: .2rem solid black;
 }
-.presentacion{
-    padding-top: 8rem;
-}
 .fab, .fas{
-    color: black;
+    color: rgba(34, 28, 42, 0.794);
     background-color: transparent;
 }
 .fa-bars{
     color: white;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 100%;
-    padding: 2.5rem;
-    left: 0;
-    top: 0;
-    position: fixed;
-    background-color: rgb(0, 0, 0);
-    height: 8rem;
-    align-items: center;
-}
-.burger_button{
-    border: none;
-    background-color: transparent;
-}
-.menu{
-    display: flex;
-    font-size: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem
 }
 .contenedor {
     max-width: 100rem;
     width: 90%;
     margin: 0 auto;
 }
+.proyectos{
+    margin: 0;
+}
 .proyectos__bloques{
-    margin: 4rem auto;
     text-align: center;
-    width: 28rem;
     padding-top: 1rem;
     padding-bottom: 3rem;
-    box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.34);
-    -webkit-box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.34);
-    -moz-box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.34);
-    border-radius: 76px 76px 76px 76px;
-    -webkit-border-radius: 76px 76px 76px 76px;
-    -moz-border-radius: 76px 76px 76px 76px;
-}
-.proyectos__bloques:hover{
-    width: 40rem;
-    height: 45rem;
-}
-.proyectos__bloques img{
-    margin-top: 2rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    
+    box-shadow: 0 8px 32px 0 rgba(184, 185, 194, 0.37);
+    backdrop-filter: blur( 1.0px );
+    -webkit-backdrop-filter: blur( 1.0px );
+    border-radius: 40px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .proyectos__bloques p{
     margin: 1rem 2rem auto 2rem;
+    color: #012443;
+    text-align: justify;
+}
+.proyectos__bloques img{
+    width: 8rem;
+    height: 8rem;
 }
 .tecnologias{
     display: flex;
@@ -433,51 +387,33 @@ img{
     width: 15rem;
     height: 15rem;
 }
-ul{
-    text-decoration: none;
-
-}
 li p{
     margin: 0;
     text-align: left;
+    color: black;
 }
 .parrafo{
     text-align: center;
 }
 .contacto{
     text-align: center;
-    margin-bottom: 5rem;
 }
-
 .contactos{
     display: flex;
     justify-content:space-evenly;
-    margin: 5rem 0;
 }
-.texto{
-    margin-top: 5rem;
+.texto,.educacion__parrafo{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: 'Poppins', sans-serif;
 }
-div ul li{
-    margin-bottom: 3rem;
+p{
+    font-family: 'Poppins', sans-serif;
 }
-div ul li p:hover{
-    text-decoration: underline rgb(0, 0, 0);
-    font-size: 3rem;
-}
-  
-  
 
 
 @media (min-width: 768px) {
-    h1{
-        font-size: 4rem;
-    }
-    h2{
-        font-size: 3.5rem;
-    }
-    p{
-        font-size: 2.5rem;
-    }
+    
     .header{
         height: 12rem;
     }
@@ -486,23 +422,17 @@ div ul li p:hover{
     }
     .presentacion{
         margin-left: 3rem;
-        padding-top: 12rem;
     }
     .experiencia{
-        padding-top: 12rem;
         margin-right: 3rem;
     }
     .correo{
-        font-size: 4rem;
         margin: 7rem 0; 
+        color: black;
     }
     .proyectos__varios{
         display: flex;
-        gap: 10rem;
         justify-content: space-evenly;
-    }
-    .proyectos__bloques{
-        width:30rem;
     }
     .educacion-animacion{
         width: 50%;
@@ -543,7 +473,9 @@ div ul li p:hover{
         flex-flow: wrap-reverse;
     }
     .contacto__texto{
-        width: 50%;
+        padding-top: 10rem;
+        width: 100%;
+        padding-bottom: 10rem;
     }
     .cursos{
         gap: 5rem;
@@ -552,37 +484,22 @@ div ul li p:hover{
 @media (min-width: 1440px) {
     .contenedor{
         min-width: 10%;
-        width: 35%;
         margin: 0 auto;
     }
     .educacion{
         margin: 0;
     }
-    .presentacion , .experiencia, .educacion, .contacto, .proyectos{
+    .presentacion , .experiencia, .educacion,  .proyectos{
         max-width: 1000rem;
         width: 90%;
         margin: 0 auto;
         align-items: center;
         padding: 10rem 0;
     }
-    .presentacion{
-        padding-top: 24rem;
-    }
-    .contactos{
-        margin-top: 10rem;
-    }
     .proyectos__varios{
         gap: 10rem;
     }
     .cursos{
         gap: 10rem;
-    }
-    
-    .proyectos__bloques{
-        width:40rem;
-        height: 40rem;
-    }
-    .header{
-        height: 12rem;
-    }
-}*/
+    } 
+}
