@@ -242,8 +242,8 @@ div ul li{
     }
     .proyectos__varios{
         display: flex;
-        gap: 10rem;
         justify-content: space-evenly;
+        flex-wrap: wrap;
     }
     .educacion-animacion{
         width: 50%;
