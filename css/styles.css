@@ -102,6 +102,7 @@ a{
     margin: 4rem auto;
     text-align: center;
     width: 28rem;
+    height: 40rem;
     padding-top: 1rem;
     padding-bottom: 3rem;
     box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.34);
@@ -110,6 +111,7 @@ a{
     border-radius: 76px 76px 76px 76px;
     -webkit-border-radius: 76px 76px 76px 76px;
     -moz-border-radius: 76px 76px 76px 76px;
+    border: 4px solid rgb(70, 69, 69);
 }
 .proyectos__bloques img{
     margin-top: 2rem;
@@ -201,13 +203,13 @@ div ul li{
   .sidebar_menu{
       list-style: none;
       padding-left: 3rem;
-      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      margin-bottom: 0;
   }
   .sidebar_menu-item{
-      margin-bottom: 3rem;
+      margin-top: 7rem;
+      
   }
   .sidebar-text{
     color: var(--oscuro);
@@ -217,16 +219,10 @@ div ul li{
 
 @media (min-width: 768px) {
     h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     h2{
         font-size: 3.5rem;
-    }
-    p{
-        font-size: 2.5rem;
-    }
-    .header{
-        height: 12rem;
     }
     .todos{
         display: flex;
@@ -248,9 +244,6 @@ div ul li{
         display: flex;
         gap: 10rem;
         justify-content: space-evenly;
-    }
-    .proyectos__bloques{
-        width:30rem;
     }
     .educacion-animacion{
         width: 50%;
@@ -324,13 +317,5 @@ div ul li{
     }
     .cursos{
         gap: 10rem;
-    }
-    
-    .proyectos__bloques{
-        width:40rem;
-        height: 40rem;
-    }
-    .header{
-        height: 12rem;
     }
 }
