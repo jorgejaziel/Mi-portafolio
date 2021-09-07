@@ -126,6 +126,38 @@ a{
     height: 5rem;
     margin: 10%;
 }
+.listaPlatzi{
+    height: 30rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.listaPlatzi::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.listaPlatzi::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.listaPlatzi::-webkit-scrollbar-button:increment,.listaPlatzi::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.listaPlatzi::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.listaPlatzi::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.listaPlatzi::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
 .educacion__parrafo{
     text-align: center;
 }
@@ -244,6 +276,7 @@ div ul li{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        gap: 4rem;
     }
     .educacion-animacion{
         width: 50%;
@@ -311,9 +344,6 @@ div ul li{
     }
     .contactos{
         margin-top: 10rem;
-    }
-    .proyectos__varios{
-        gap: 10rem;
     }
     .cursos{
         gap: 10rem;
