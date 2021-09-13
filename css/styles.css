@@ -11,6 +11,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -52,7 +53,7 @@ a{
 }
 .presentacion , .experiencia, .educacion, .proyectos{
     padding-bottom: 3rem;
-    max-width: 100rem;
+    max-width: 1000rem;
     width: 90%;
     margin: 0 auto;
     border-bottom: .2rem solid black;
@@ -81,6 +82,9 @@ a{
     z-index: 1;
     height: 8rem;
     align-items: center;
+}
+.header__tablet{
+    display: none;
 }
 .burger_button{
     border: none;
@@ -234,14 +238,16 @@ div ul li{
   }
   .sidebar_menu{
       list-style: none;
-      padding-left: 3rem;
       display: flex;
       flex-direction: column;
       margin-bottom: 0;
+      gap: 6rem;
+      padding: 2rem;
+      
   }
   .sidebar_menu-item{
-      margin-top: 7rem;
-      
+      font-weight: 700;
+      font-size: 4rem;
   }
   .sidebar-text{
     color: var(--oscuro);
@@ -266,6 +272,15 @@ div ul li{
     .experiencia{
         padding-top: 12rem;
         margin-right: 3rem;
+    }
+    .proyectos {
+        padding-top: 5rem;
+    }
+    .educacion {
+        padding-top: 5rem;
+    }
+    .contacto {
+        padding-top: 5rem;
     }
     .correo{
         font-size: 4rem;
@@ -292,6 +307,41 @@ div ul li{
     .platzi{
         width: 50%;
     }
+    .header{
+        display: none;
+    }
+    .header__tablet{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 2.5rem;
+        left: 0;
+        top: 0;
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        z-index: 1;
+        height: 8rem;
+        align-items: center;
+    }
+    .container__nav{
+        width: 50%;
+    }
+    .nav__tablet{
+        display: flex;
+        margin: 25px 0 0 0;
+        padding: 0;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    .nav__tablet a{
+        color: white;
+    }
+    
 }
 @media (min-width: 1024px) {
     .todos{
@@ -301,6 +351,8 @@ div ul li{
         display: flex;
         gap: 2rem;
         margin: 0 auto ;
+        padding: 10rem 0;
+        width: 90%;
     }
     .presentacion__texto{
         width: 50%;
@@ -322,6 +374,15 @@ div ul li{
     .cursos{
         gap: 5rem;
     }
+    .educacion__parrafo {
+        font-size: 2rem;
+    }
+    .cursos li {
+        font-size: 2rem;
+    }
+    .cursos p {
+        font-size: 2.3rem;
+    }
 }
 @media (min-width: 1440px) {
     .contenedor{
@@ -340,12 +401,57 @@ div ul li{
         padding: 10rem 0;
     }
     .presentacion{
-        padding-top: 24rem;
+        padding-top: 14rem;
     }
     .contactos{
         margin-top: 10rem;
     }
     .cursos{
         gap: 10rem;
+    }
+    .educacion__parrafo {
+        font-size: 3rem;
+    }
+    .cursos li {
+        font-size: 2rem;
+    }
+    .cursos p {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 2559px) {
+    h2 {
+        font-size: 6rem;
+    }
+    .parrafo {
+        font-size: 4rem;
+    }
+    .parrafo__texto {
+        font-size: 4rem;
+    }
+    .nav__tablet {
+        margin-right: 12rem;
+    }
+    .nav__tablet a{
+        font-size: 2rem;
+    }
+    h1 {
+        margin-left: 12rem;
+        font-size: 5rem;
+    }
+    .fa-5x{
+        font-size: 10em;
+    }
+    .educacion__parrafo {
+        font-size: 4rem;
+    }
+    .cursos li {
+        font-size: 3rem;
+    }
+    .cursos p {
+        font-size: 4rem;
+    }
+    .header__tablet {
+        height: 15rem;
     }
 }
